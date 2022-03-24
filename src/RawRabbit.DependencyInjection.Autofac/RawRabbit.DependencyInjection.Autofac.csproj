@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>Wire up RawRabbit with Autfac!</Description>
     <AssemblyTitle>RawRabbit.DependencyInjection.Autofac</AssemblyTitle>
-    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionPrefix>2.0.3</VersionPrefix>
     <Authors>par.dahlman</Authors>
     <TargetFrameworks>netstandard1.5;net451</TargetFrameworks>
     <AssemblyName>RawRabbit.DependencyInjection.Autofac</AssemblyName>
