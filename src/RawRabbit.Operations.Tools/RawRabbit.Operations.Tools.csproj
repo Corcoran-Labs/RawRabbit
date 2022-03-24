@@ -10,7 +10,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <RepositoryUrl>https://github.com/pardahlman/RawRabbit</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Corcoran-Labs/RawRabbit</RepositoryUrl>
     <PackageTags>rabbitmq;rawrabbit;operation;tools</PackageTags>
   </PropertyGroup>
 

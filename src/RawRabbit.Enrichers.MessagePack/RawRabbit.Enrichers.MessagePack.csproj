@@ -8,7 +8,7 @@
     <PackageId>RawRabbit.Enrichers.MessagePack</PackageId>
     <PackageTags>rabbitmq;rawrabbit;messagepack</PackageTags>
     <PackageIconUrl>http://pardahlman.se/raw/icon.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/pardahlman/RawRabbit</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Corcoran-Labs/RawRabbit</PackageProjectUrl>
     <Description>Serialize messages with MessagePack in RawRabbit</Description>
   </PropertyGroup>
 

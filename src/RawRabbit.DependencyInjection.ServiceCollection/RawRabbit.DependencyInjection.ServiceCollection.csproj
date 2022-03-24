@@ -9,7 +9,7 @@
     <PackageId>RawRabbit.DependencyInjection.ServiceCollection</PackageId>
     <PackageTags>rabbitmq;raw;rawrabbit;di;ioc;servicecollection</PackageTags>
     <PackageIconUrl>http://pardahlman.se/raw/icon.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/pardahlman/RawRabbit</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Corcoran-Labs/RawRabbit</PackageProjectUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
