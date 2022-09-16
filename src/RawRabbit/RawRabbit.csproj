@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>A modern framework for communication over RabbitMq.</Description>
     <AssemblyTitle>RawRabbit</AssemblyTitle>
-    <VersionPrefix>2.0.3</VersionPrefix>
+    <VersionPrefix>2.0.4</VersionPrefix>
     <Authors>pardahlman;enrique-avalon;corcoran</Authors>
     <TargetFrameworks>netstandard1.5;net451</TargetFrameworks>
     <AssemblyName>RawRabbit</AssemblyName>

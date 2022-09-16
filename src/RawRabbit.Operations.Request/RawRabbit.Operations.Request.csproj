@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>Enrich the BusClient with a RequestAsync, the caller part of RPC.</Description>
     <AssemblyTitle>RawRabbit.Operations.Request</AssemblyTitle>
-    <VersionPrefix>2.0.3</VersionPrefix>
+    <VersionPrefix>2.0.4</VersionPrefix>
     <Authors>pardahlman;enrique-avalon</Authors>
     <TargetFrameworks>netstandard1.5;net451</TargetFrameworks>
     <AssemblyName>RawRabbit.Operations.Request</AssemblyName>
