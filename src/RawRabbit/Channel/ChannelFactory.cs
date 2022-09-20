@@ -56,7 +56,7 @@ namespace RawRabbit.Channel
 		public virtual async Task<IModel> GetOrCreateChannelAsync(CancellationToken token = default(CancellationToken))
 		{
 			var currentChannel = Channels.FirstOrDefault(x => x.IsOpen);
-			if (currentChannel == null)
+			if (currentChannel != null)
 			{
 				_logger.Debug("One of existing channels is open and will be used.");
 				return currentChannel;
