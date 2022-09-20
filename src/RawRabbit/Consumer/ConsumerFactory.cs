@@ -52,7 +52,7 @@ namespace RawRabbit.Consumer
 			                                           lazyConsumerTask.Value.Result.Model.IsClosed))
 			{
 				_consumerCache.TryRemove(consumerKey, out _);
-				return GetConsumerAsync(cfg, channel, token);
+				return GetConfiguredConsumerAsync(cfg, channel, token);
 			}
 
 			return lazyConsumerTask.Value;
