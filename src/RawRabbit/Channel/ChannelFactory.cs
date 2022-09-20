@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using RabbitMQ.Client;
@@ -50,6 +51,17 @@ namespace RawRabbit.Channel
 			var channel = connection.CreateModel();
 			Channels.Add(channel);
 			return channel;
+		}
+
+		public virtual async Task<IModel> GetOrCreateChannelAsync(CancellationToken token = default(CancellationToken))
+		{
+			var currentChannel = Channels.FirstOrDefault(x => x.IsOpen);
+			if (currentChannel == null)
+			{
+				_logger.Debug("One of existing channels is open and will be used.");
+				return currentChannel;
+			}
+			return await CreateChannelAsync(token);
 		}
 
 		protected virtual async Task<IConnection> GetConnectionAsync(CancellationToken token = default(CancellationToken))

@@ -13,5 +13,12 @@ namespace RawRabbit.Channel.Abstraction
 		/// </summary>
 		/// <returns>A new instance of an IModel</returns>
 		Task<IModel> CreateChannelAsync(CancellationToken token = default(CancellationToken));
+
+		/// <summary>
+		/// Retrieves or creates a new istance of a channal that the caller is responsible
+		/// in closing and disposing.
+		/// </summary>
+		/// <returns>A new instance of an IModel</returns>
+		Task<IModel> GetOrCreateChannelAsync(CancellationToken token = default(CancellationToken));
 	}
 }

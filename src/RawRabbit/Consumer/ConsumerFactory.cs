@@ -48,7 +48,8 @@ namespace RawRabbit.Consumer
 					return consumer;
 				});
 			});
-			if (lazyConsumerTask.Value.IsCompleted && lazyConsumerTask.Value.Result.Model.IsClosed)
+			if (lazyConsumerTask.Value.IsCompleted && (lazyConsumerTask.Value.IsCanceled || lazyConsumerTask.Value.IsFaulted ||
+			                                           lazyConsumerTask.Value.Result.Model.IsClosed))
 			{
 				_consumerCache.TryRemove(consumerKey, out _);
 				return GetConsumerAsync(cfg, channel, token);
@@ -112,7 +113,7 @@ namespace RawRabbit.Consumer
 		protected virtual Task<IModel> GetOrCreateChannelAsync(CancellationToken token = default(CancellationToken))
 		{
 			_logger.Info("Creating a dedicated channel for consumer.");
-			return _channelFactory.CreateChannelAsync(token);
+			return _channelFactory.GetOrCreateChannelAsync(token);
 		}
 
 		protected string CreateConsumerKey(ConsumeConfiguration cfg)
